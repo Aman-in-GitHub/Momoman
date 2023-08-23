@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1::selection,
+h2::selection,
+h3::selection,
+a::selection,
+p::selection,
+a::selection,
+button::selection,
+input::selection,
+div::selection {
+  color: black;
+  background-color: crimson;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0c0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: crimson;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(227, 46, 83);
+}
+
+@supports (scrollbar-color: crimson #0b0c0f) {
+  * {
+    scrollbar-color: crimson #0b0c0f;
+  }
+}
+
+.flow-hidden {
+  overflow: hidden;
+}
+
+.active-1 {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.active-2 {
+  opacity: 0;
+}
+
+.active-3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.move-right {
+  right: 0;
+}
